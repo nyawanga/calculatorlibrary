@@ -1,0 +1,11 @@
+machine:
+  python:
+    version: 3.10
+
+dependencies:
+  override:
+    - pip install -r requirements.txt
+
+test:
+  override:
+    - nosetests tests/calculator.py
